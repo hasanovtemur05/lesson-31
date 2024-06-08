@@ -1,0 +1,71 @@
+.collection{
+    margin-top: 100px;
+    &__title{
+        font-size: 38px;
+        color: white;
+    }
+    &__desc{
+        font-size: 22px;
+        color: white;
+    }
+    &__cards{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        .collection__card__title{
+            font-size: 22px;
+            color: white;
+            padding: 10px 0px;
+        }
+        .avatar{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            p{
+                color: white;
+            }
+        }
+    }
+}
+@media (min-width:35px){
+    .collection{
+      &__title{
+            text-align: center;
+        }
+        &__desc{
+            text-align: center;
+        }
+     
+    }
+}
+@media (min-width:768px){
+    .collection{
+      &__title{
+            text-align: center;
+        }
+        &__desc{
+            text-align: center;
+        }
+      &__card{
+        width: 70%;
+      }  
+    }
+}
+@media (min-width:992px){
+    .collection{
+      &__cards{
+        display: flex;
+        justify-content: space-between;
+      }  
+      &__card{
+        width: 30%;
+      }
+    }
+}
